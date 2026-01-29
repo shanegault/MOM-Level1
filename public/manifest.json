@@ -1,0 +1,9 @@
+{
+  "short_name": "Mind Over Money",
+  "name": "Mind Over Money - Financial Literacy",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1A2F23",
+  "background_color": "#1A2F23"
+}
