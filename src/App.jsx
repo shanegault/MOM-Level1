@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GameProvider, useGame } from './GameContext.js';
+import { GameProvider, useGame } from './GameContext.jsx';
 import HubView from './HubView.jsx';
 
 // Import all modules
