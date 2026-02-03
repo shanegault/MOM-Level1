@@ -103,7 +103,7 @@ export default function JobSimulatorModule({ onBack, onComplete }) {
 
   // Job Simulator State
   const [initialGuess, setInitialGuess] = useState(null);
-  const [batchId] = useState(`NZ-${Math.floor(1000 + Math.random() * 9000)}`);
+  const [batchId] = useState(`NZ${Math.floor(1000 + Math.random() * 9000)}`);
   const [tasksCompleted, setTasksCompleted] = useState(0);
   const [invoiceData, setInvoiceData] = useState({ id: '', count: '', rate: 4.50, total: '' });
   const [invoiceStatus, setInvoiceStatus] = useState(null); // 'approved' | 'rejected'
@@ -555,7 +555,7 @@ function Phase2TheInvoice({ userLevel, invoiceData, setInvoiceData, onNext, real
           <label className="block text-xs font-bold text-stone-500 uppercase tracking-wide mb-2">Batch ID</label>
           <input
             type="text"
-            placeholder="e.g. NZ-0000"
+            placeholder="e.g. NZ0000"
             className="w-full font-mono uppercase"
             value={invoiceData.id}
             onChange={(e) => setInvoiceData({...invoiceData, id: e.target.value})}
