@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, Check } from 'lucide-react';
-import { useGame, SKILLS } from './GameContext.js';
+import { useGame, SKILLS } from './GameContext.jsx';
 
 // ═══════════════════════════════════════════════════════════════
 // MIND OVER MONEY - Hub View (Dashboard)
