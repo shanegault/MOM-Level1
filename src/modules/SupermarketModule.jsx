@@ -553,8 +553,8 @@ function Phase2TheAisle({ allItems, cart, setCart, totalSpent, setTotalSpent, bu
 
           <div className="text-center mb-6">
             <span className="text-6xl mb-4 block filter drop-shadow-md animate-float">{selectedCategory.icon}</span>
-            <h2 className="text-2xl font-bold text-stone-800">{selectedCategory.name}</h2>
-            <p className="text-stone-500 text-sm">Select a product option</p>
+            <h2 className="text-2xl font-bold text-[#F5F1E6]">{selectedCategory.name}</h2>
+            <p className="text-[#F5F1E6]/70 text-sm">Select a product option</p>
           </div>
 
           <div className="grid grid-cols-1 gap-4">

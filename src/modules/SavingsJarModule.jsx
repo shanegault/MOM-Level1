@@ -73,7 +73,7 @@ export default function SavingsJarModule({ onBack, onComplete }) {
     treeScale: 1.0,
     cash: 0,
     inventory: [],
-    timeLeft: 60,
+    timeLeft: 30,
     totalSaved: 0,
     totalSpent: 0
   });
@@ -386,7 +386,7 @@ function Phase1Setup({ onNext }) {
         <div className="bg-stone-50 p-4 rounded-xl border border-stone-100 text-left space-y-2 text-sm text-stone-600">
           <div className="flex items-center gap-3">
             <Clock className="w-4 h-4 text-emerald-500" />
-            <span>Survive for <strong>60 seconds</strong>.</span>
+            <span>Survive for <strong>30 seconds</strong>.</span>
           </div>
           <div className="flex items-center gap-3">
             <Coins className="w-4 h-4 text-amber-500" />
@@ -505,7 +505,7 @@ function Phase2GameLoop({ gameState, setGameState, onGameOver }) {
       treeScale: 1.0,
       cash: 0,
       inventory: [],
-      timeLeft: 60,
+      timeLeft: 30,
       totalSaved: 0,
       totalSpent: 0
     });
@@ -664,7 +664,7 @@ function Phase3Harvest({ gameState, onNext }) {
           <TreeDeciduous size={80} className="text-emerald-700" />
         </div>
         <h2 className="text-3xl font-bold text-[#F5F1E6] mb-2">Time's Up!</h2>
-        <p className="text-[#F5F1E6]/70">The 60 seconds is over. Let's look at your harvest.</p>
+        <p className="text-[#F5F1E6]/70">The 30 seconds is over. Let's look at your harvest.</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
