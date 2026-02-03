@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, Check } from 'lucide-react';
-import { useGame, SKILLS } from './GameContext.jsx';
+import { useGame, SKILLS } from './GameContext.js';
 
 // ═══════════════════════════════════════════════════════════════
 // MIND OVER MONEY - Hub View (Dashboard)
@@ -143,6 +143,22 @@ export default function HubView({ onStartModule }) {
                     </div>
                   );
                 })}
+
+              {/* Real Money Earned */}
+              <div className="mt-4 pt-4 border-t border-white/10">
+                <div className="flex items-center justify-between p-3 rounded-xl bg-[#F5F1E6]/10">
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg">💰</span>
+                    <span className="text-sm text-[#F5F1E6]">Real Money Earned</span>
+                  </div>
+                  <span className="text-xl font-bold text-[#B7D9B1]">
+                    ${(totalKetePoints / 2).toFixed(2)}
+                  </span>
+                </div>
+                <p className="text-xs text-[#F5F1E6]/40 mt-2 text-center">
+                  Transfer to your Wallet when ready
+                </p>
+              </div>
             </div>
           ) : (
             <div className="mt-4 p-4 rounded-xl text-center bg-[#F5F1E6]/5">
